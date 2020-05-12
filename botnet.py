@@ -32,8 +32,7 @@ class Bot:
 def command_bots(command):
     for bot in botnet:
         attack = bot.send_command(command)
-        print('Output from ' + bot.host)
-        print(attack)
+        print(f'Output from {bot.host}\n{attack}')
 
 # list of bots in botnet
 botnet = []
